@@ -3,14 +3,15 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Novo Gênero</title>
+        <title>Editar Gênero</title>
     </head>
     <body>
-        <h1>Novo Gênero</h1>
-        <form action ="/generos/insert" method="post">
+        <h1>Editar Gênero</h1>
+        <form action ="/generos/update" method="post">
+            <input type = "hidden"  name="id" value="${genero.id}"
             <div>
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" />
+                <input type="text" name="nome" value="${genero.nome}"/>
             </div>
             <br />
             <button type="submit">Salvar</button>

@@ -20,7 +20,7 @@ public class Genero {
     public long getId() {
         return this.id;
     }
-    public void setNome(String Nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
     public String getNome() {
